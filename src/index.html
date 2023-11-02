@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Dominó</title>
+</head>
+<body>
+
+<!--Nav-->
+<nav class="navbar bg-dark fixed-top d-flex">
+    <div class="container-fluid align-content-center">
+        <a class="navbar-brand" href="#"> <img src="/src/assets/img/webpack-logo.png" width="100" height="auto"></a>
+    </div>
+</nav>
+
+<!--Nombre de equipos-->
+<section class="py-5 pb-3 mt-5 Nombre-equipos">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-6 Equipo-1">
+                <h1>Jugador 1 Jugador 2</h1>
+            </div>
+            <div class="col-6 Equipo-2">
+                <h1>Jugador 3  Jugador 4</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Puntos de equipos-->
+<section class="Puntos-equipos">
+    <div class="container-fluid ">
+        <div class="row mb-3">
+            <div class="col-6">
+                <input type="number" class="ps-0">
+            </div>
+            <div class="col-6">
+                <input type="number" class="pe-0 equipo2">
+            </div>
+        </div>
+    </div>
+
+<!--Boton añadir puntos-->
+<section class="Add-puntos ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary col-12 mx-auto d-block">Añadir Mano</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Tabla de puntos-->
+<section class="tabla-puntos">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="text-center col-4">#</th>
+                        <th scope="col"class="text-center">Suma1</th>
+                        <th scope="col"class="text-center">Suma2</th>
+                    </tr>
+                    </thead>
+                    <tbody class="TablaPuntaje">
+                    <!-- <tr id="123">
+                        <th scope="row" class="text-center">1</th>
+                        <td class="text-center">0</td>
+                        <td class="text-center">50</td>
+                        <td class="text-center"> <button>x</button></td>
+                    </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Nav-->
+<section class="navegacion">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="col-12 nav nav-pills fixed-bottom d-flex justify-content-center">
+                    <a class="col-4 nav-link text-center active" aria-current="page" href="#">edit</a>
+                    <a class="col-4 nav-link text-center" href="#">Mas</a>
+                    <a class="col-4 nav-link text-center" href="#">Ranking</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
